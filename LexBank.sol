@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2020-03-24
-*/
-
 pragma solidity 0.5.14;
 
 /*
@@ -685,7 +681,7 @@ contract LexBank is LexDAORole, ERC20, ERC20Detailed {
     
     function transferLexDAO(address payable newLexDAO) public {
         require(msg.sender == lexDAO);
-        lexDAO = newLexDAO; // new lexDollar beneficiary account
+        lexDAO = newLexDAO; // new LexBank beneficiary account
         
         emit LexDAOTransferred(newLexDAO);
     }
